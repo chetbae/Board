@@ -18,8 +18,12 @@
 		DF534CB92CDFF2530014D07C /* KilterBoardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF534CB82CDFF24B0014D07C /* KilterBoardRepository.swift */; };
 		DF534CBB2CDFF2AE0014D07C /* ClimbsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF534CBA2CDFF2AB0014D07C /* ClimbsUseCase.swift */; };
 		DF534CC22CDFF3F50014D07C /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = DF534CC12CDFF3F50014D07C /* SQLite */; };
-		DF534CC82CE073640014D07C /* kilter.db in Resources */ = {isa = PBXBuildFile; fileRef = DF534CC72CE073640014D07C /* kilter.db */; };
 		DF534CCC2CE16E780014D07C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DF534CCB2CE16E6F0014D07C /* .gitignore */; };
+		DF534CCE2CE179BD0014D07C /* ClimbListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF534CCD2CE179B70014D07C /* ClimbListViewModel.swift */; };
+		DF534CD02CE179DE0014D07C /* ClimbListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF534CCF2CE179DE0014D07C /* ClimbListView.swift */; };
+		DF534CD42CE1AEA10014D07C /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF534CD32CE1AEA10014D07C /* DatabaseManager.swift */; };
+		DF534CD62CE1B0080014D07C /* kilter.db in Resources */ = {isa = PBXBuildFile; fileRef = DF534CD52CE1B0080014D07C /* kilter.db */; };
+		DF534CD82CE1C6D60014D07C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF534CD72CE1C6D00014D07C /* README.md */; };
 		DF7E95922CDFC3D300B9CCC7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E95912CDFC3CD00B9CCC7 /* Board.swift */; };
 		DF7E95962CDFC3F700B9CCC7 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E95952CDFC3F700B9CCC7 /* AppPreferences.swift */; };
 		DF7E95982CDFC41300B9CCC7 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E95972CDFC41300B9CCC7 /* PreferencesStorage.swift */; };
@@ -59,8 +63,12 @@
 		DF534CB62CDFF22B0014D07C /* BoardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardRepository.swift; sourceTree = "<group>"; };
 		DF534CB82CDFF24B0014D07C /* KilterBoardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilterBoardRepository.swift; sourceTree = "<group>"; };
 		DF534CBA2CDFF2AB0014D07C /* ClimbsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbsUseCase.swift; sourceTree = "<group>"; };
-		DF534CC72CE073640014D07C /* kilter.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kilter.db; sourceTree = "<group>"; };
 		DF534CCB2CE16E6F0014D07C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DF534CCD2CE179B70014D07C /* ClimbListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListViewModel.swift; sourceTree = "<group>"; };
+		DF534CCF2CE179DE0014D07C /* ClimbListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListView.swift; sourceTree = "<group>"; };
+		DF534CD32CE1AEA10014D07C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DF534CD52CE1B0080014D07C /* kilter.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kilter.db; sourceTree = "<group>"; };
+		DF534CD72CE1C6D00014D07C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DF7E95912CDFC3CD00B9CCC7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		DF7E95952CDFC3F700B9CCC7 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
 		DF7E95972CDFC41300B9CCC7 /* PreferencesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStorage.swift; sourceTree = "<group>"; };
@@ -98,8 +106,8 @@
 		DF41A5CD2CCD9FD500BA1FB5 = {
 			isa = PBXGroup;
 			children = (
+				DF534CD72CE1C6D00014D07C /* README.md */,
 				DF534CCB2CE16E6F0014D07C /* .gitignore */,
-				DF534CC72CE073640014D07C /* kilter.db */,
 				DF41A5D82CCD9FD500BA1FB5 /* Board */,
 				DF41A5E92CCD9FD600BA1FB5 /* BoardTests */,
 				DF41A5F32CCD9FD600BA1FB5 /* BoardUITests */,
@@ -120,6 +128,7 @@
 		DF41A5D82CCD9FD500BA1FB5 /* Board */ = {
 			isa = PBXGroup;
 			children = (
+				DF534CD22CE1AE420014D07C /* Resources */,
 				DF41A6052CCDCD8100BA1FB5 /* Presentation */,
 				DF41A6042CCDCD7900BA1FB5 /* Data */,
 				DF41A6032CCDCD6E00BA1FB5 /* Domain */,
@@ -222,6 +231,7 @@
 		DF41A60A2CCDCDD100BA1FB5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DF534CD32CE1AEA10014D07C /* DatabaseManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,6 +239,7 @@
 		DF41A60B2CCDCDD800BA1FB5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF534CCF2CE179DE0014D07C /* ClimbListView.swift */,
 				DF7E959D2CDFC4A600B9CCC7 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -237,9 +248,18 @@
 		DF41A60C2CCDCDE000BA1FB5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DF534CCD2CE179B70014D07C /* ClimbListViewModel.swift */,
 				DF7E959B2CDFC47300B9CCC7 /* PreferencesViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF534CD22CE1AE420014D07C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF534CD52CE1B0080014D07C /* kilter.db */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,9 +369,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF534CD62CE1B0080014D07C /* kilter.db in Resources */,
 				DF534CCC2CE16E780014D07C /* .gitignore in Resources */,
+				DF534CD82CE1C6D60014D07C /* README.md in Resources */,
 				DF41A5E12CCD9FD600BA1FB5 /* Preview Assets.xcassets in Resources */,
-				DF534CC82CE073640014D07C /* kilter.db in Resources */,
 				DF41A5DE2CCD9FD600BA1FB5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,12 +402,15 @@
 				DF7E95982CDFC41300B9CCC7 /* PreferencesStorage.swift in Sources */,
 				DF7E959C2CDFC47300B9CCC7 /* PreferencesViewModel.swift in Sources */,
 				DF7E959E2CDFC4A600B9CCC7 /* SettingsView.swift in Sources */,
+				DF534CD02CE179DE0014D07C /* ClimbListView.swift in Sources */,
 				DF534CB72CDFF2340014D07C /* BoardRepository.swift in Sources */,
 				DF41A5DA2CCD9FD500BA1FB5 /* BoardApp.swift in Sources */,
+				DF534CD42CE1AEA10014D07C /* DatabaseManager.swift in Sources */,
 				DF7E959A2CDFC45C00B9CCC7 /* PreferencesUseCase.swift in Sources */,
 				DF534CBB2CDFF2AE0014D07C /* ClimbsUseCase.swift in Sources */,
 				DF534CB92CDFF2530014D07C /* KilterBoardRepository.swift in Sources */,
 				DF534CB12CDFF1E90014D07C /* Climb.swift in Sources */,
+				DF534CCE2CE179BD0014D07C /* ClimbListViewModel.swift in Sources */,
 				DF7E95922CDFC3D300B9CCC7 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
