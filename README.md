@@ -1,6 +1,6 @@
-# Board - A Kilterboard Climbing App
+# Board
 
-A native iOS app for interacting with the Kilterboard climbing wall.
+An iOS app for interacting with system training boards. *(development starting with kilter, then moonboard, then tb2)*
 
 ## Setup
 
